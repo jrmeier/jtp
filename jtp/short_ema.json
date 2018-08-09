@@ -1,0 +1,30 @@
+{ 
+    "name":"short_ma",
+    "ind":["7_ema", "44_ema","14_rsi"],
+    "buy":{
+        "human": "Buy if the 7_ema is greater than the 44_ema",
+        "logic": [
+            {
+                "base": "7_ema",
+                "aux": "44_ema",
+                "operator": ">"
+            },
+            {
+                "base":"14_rsi",
+                "aux": 30,
+                "operator":">"
+            }
+        ]
+
+    },
+    "sell":{
+    "human": "Sell if the 7ema is less than the 44_ema",
+    "logic": [
+        {
+            "base":"7_ema",
+            "aux": "44_ema",
+            "operator": "<"
+        }
+    ]
+    }
+}
