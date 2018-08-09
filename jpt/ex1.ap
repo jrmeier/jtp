@@ -1,8 +1,0 @@
-indicators = {
-    "short_ma": "7_ema",
-    "long_ma": "44_ema"
-}
-
-buy (
-    # ignore this
-)
